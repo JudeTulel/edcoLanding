@@ -1,3 +1,36 @@
-.service-detail{
-    background-image: url(https://i.pinimg.com/originals/ba/0e/b8/ba0eb82dbe74fb21925083c2ea7475b4.jpg);
+.container {
+  background-image: url('your-image-url.jpg'); /* Replace 'your-image-url.jpg' with the actual URL of your image */
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive styling */
+@media (max-width: 1200px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 5px;
+    flex-direction: column;
+  }
 }

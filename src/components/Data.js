@@ -4,14 +4,14 @@ const Services =[
         link:'BigData',
         title:'Big Data',
         description:'Big data is a field that treats ways to analyze, systematically extract information from, or otherwise deal with data sets that are too large or complex to be dealt with by traditional data-processing application software. \nEDCO provides big data services to help you make better business decisions.',
-        image:'BigData.jpg'
+        image:'https://wallpaperaccess.com/full/1614791.jpg'
     },
     {
         id:1,
         link:'AppDevelopment',
         title:'Application Development',
         description:'Application development is the process of creating a computer program or a set of programs to perform the different tasks that a business requires.\n EDCO provides application development services to help you automate your business processes and better serve your customers. We also deal with building applications from ideas to reality.',
-        image:'ApplicationDevelopment.jpg'
+        image:'https://th.bing.com/th/id/R.e195e84fb7b7a4daa9fd70e41d791a79?rik=hRm%2bSFhb%2f710Vw&pid=ImgRaw&r=0'
     },
     {
         id:2,
@@ -32,7 +32,7 @@ const Services =[
         link:'CloudComputing',
         title:'Cloud Computing',
         description:'Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user. EDCO provides cloud computing services to help you reduce costs and increase efficiency.',
-        image:'CloudComputing.jpg'
+        image:'https://wallpaperaccess.com/full/1805473.jpg'
     },
     {
         id:5,
@@ -46,14 +46,14 @@ const Services =[
         link:'ETLServices',
         title:'ETL Services',
         description:'ETL (extract, transform, load) is the process of gathering data from multiple sources and integrating it into a single, consistent data store. EDCO provides ETL services to help you consolidate your data and make it easier to analyze.',
-        image:'ETLServices.jpg'
+        image:'https://www.altexsoft.com/media/2021/03/the-elt-workflow.png'
     },
    {
         id:7,
         link:'DataModelling',
         title:'Data Modelling',
         description:'Data Modelling is the graphical representation of information and data. EDCO provides data Modelling services to help you understand complex data and make better decisions based on the insights you gain.',
-        image:'DataModelling.jpg'
+        image:'https://th.bing.com/th/id/R.06e56de65567e14dcce910738b51a05e?rik=%2fFD959Tyl7MBPA&pid=ImgRaw&r=0'
     },
     {
         id:8,

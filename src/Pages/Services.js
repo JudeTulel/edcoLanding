@@ -16,14 +16,14 @@ const Service = () => {
         <div>
        
         <div style={{backgroundImage: `url(${service.image})`,
-         backgroundSize:'cover',
+         backgroundSize:'contain',
           height: 'auto',
           width: '100%'
         , display: 'flex'
         , flexDirection: 'column',
          alignItems: 'center'
         , justifyContent: 'center',
-        height: '30%',
+         
         }}>
             <h1 style={{
                 color: 'white',
@@ -36,7 +36,7 @@ const Service = () => {
            
       
         <h2 style={{
-        color: 'black',
+        color: 'white',
         textAlign: 'center',
         padding: '20px',
         textShadow: '4px 4px 8px #000000',
@@ -49,6 +49,8 @@ const Service = () => {
             borderRadius: '10px',
             boxShadow: '5px 5px 15px #000000',
             backgroundColor: 'white',
+            opacity:0.7,
+            zIndex:2
             
         }}>
             
@@ -59,7 +61,9 @@ const Service = () => {
             fontFamily: 'Roboto, sans-serif',
             textAlign: 'center',
             padding: '20px',
-            margin: '20px'
+            margin: '20px',
+            fontWeight:'bold',
+            opacity:1,
         }}>{service.description}</p>
 
         </div>

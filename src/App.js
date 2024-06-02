@@ -1,25 +1,42 @@
-
-import './App.css';
-import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import Navbar from './components/Navbar';
 import Service from './Pages/Services';
-import { Services } from './components/Data';
+import Footer from './components/Footer';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Modal from 'react-modal';
 
+import './App.css';
 
+Modal.setAppElement('#root'); // Required for accessibility
 
 function App() {
-  
   return (
     <div>
       <BrowserRouter>
-      <Navbar/>
+        <Navbar />
         <Routes>
-          <Route path='/' element={<Home/>} />
+          <Route path='/' element={<Home />} />
           <Route path="/:serviceId" element={<Service />} />
+          <Route path="/testimony" element={<Service />} />
+
         </Routes>
+        <Footer />
+        
       </BrowserRouter>
-      
+      <ToastContainer
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        className="Toastify__toast-container--center"
+        toastClassName="Toastify__toast--custom"
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleUp, faAngleDown, faBars, faTimes, faHome, faComment } from '@fortawesome/free-solid-svg-icons';
+import { faAngleUp, faAngleDown, faBars, faTimes, faHome } from '@fortawesome/free-solid-svg-icons';
 import logo from '../Assets/logo.png';
 import './Navbar.css';
 import { Services } from './Data';
@@ -18,7 +18,10 @@ const Navbar = () => {
     const handleMenuClick = () => {
         setShowMenu(!showMenu);
     };
-
+   const handleServiceClick = () => {
+        handleDropdownClick();
+        handleMenuClick();
+    }
     return (
         <header className='container'>
             <Link to='/'>
@@ -55,7 +58,7 @@ const Navbar = () => {
                         <div className={`dropdown-content ${showDropdown ? 'show' : ''}`}>
                             <div className="services-grid">
                                 {Services.map((service, index) => (
-                                    <Link key={index} to={`/${service.link}`} className="service-link" onClick={handleDropdownClick}>
+                                    <Link key={index} to={`/${service.link}`} className="service-link" onClick={handleServiceClick}>
                                         {service.title}
                                     </Link>
                                 ))}
