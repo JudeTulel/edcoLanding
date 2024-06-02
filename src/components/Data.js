@@ -70,6 +70,32 @@ const Services =[
         image:'EWasteManagement.jpg'
     },
 ]
-
+const testimonials = [
+    {
+      name: "Firm A",
+      img: "https://www.w3schools.com/w3images/avatar2.png",
+      description: "EDCO helped us create an amazing ecommerce site that boosted our online sales.",
+      
+    },
+    {
+      name: "Firm B",
+      img: "https://www.w3schools.com/w3images/avatar6.png",
+      description: "Thanks to EDCO, we now have a loyalty app that keeps our customers engaged and coming back for more.",
+      
+    },
+    {
+      name: "Firm C",
+      img: "https://www.w3schools.com/w3images/avatar5.png",
+      description: "EDCO's POS and ERP system streamlined our operations and improved our efficiency.",
+      
+    },
+    {
+      name: "Researcher A",
+      img: "https://www.w3schools.com/w3images/avatar3.png",
+      description: "EDCO provided us with powerful data analysis tools that helped us uncover valuable insights.",
+      
+    }
+  ];
 
   export {Services}
+  export {testimonials}

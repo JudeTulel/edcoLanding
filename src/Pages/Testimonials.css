@@ -1,0 +1,19 @@
+.testimonies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonies .testimonial {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonies .testimonial {
+        width: 100%;
+    }
+}

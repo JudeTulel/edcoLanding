@@ -7,8 +7,10 @@ import Footer from './components/Footer';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Modal from 'react-modal';
+import Team from './Pages/Team';
 
 import './App.css';
+import Testimonies from './Pages/Testimonies';
 
 Modal.setAppElement('#root'); // Required for accessibility
 
@@ -20,8 +22,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path="/:serviceId" element={<Service />} />
-          <Route path="/testimony" element={<Service />} />
-
+          <Route path="/testimony" element={<Testimonies />} />
+          <Route path="/team" element={<Team />} />
+          
         </Routes>
         <Footer />
         
