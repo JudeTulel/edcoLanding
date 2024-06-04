@@ -45,7 +45,7 @@ const Home = (props) => {
 
         }}>
           EDCO is a tech Consulting and analytics agency head quaterd in Eldoret-Kenya .We have our clients needs at heart and we are always ready to provide the best services to meet their needs
-          by leveraging the latest technologies, we are able to provide the best services to our clients to fit their business needs.
+          by leveraging the latest technologies.
           We have a team of experienced dedicated professionals who are fit to provide the best services to our clients.
           Dont be left out of the digital age, join us today and lets help you take your business to the next level.
 
@@ -59,8 +59,6 @@ const Home = (props) => {
           justifyContent: 'center',
           color: 'maroon',
           fontFamily: 'Roboto',
-
-
           flexDirection: 'column'
         }}>
           <h1>Our Tech Stack</h1>

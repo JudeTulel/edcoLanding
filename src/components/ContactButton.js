@@ -41,7 +41,7 @@ const ContactButton = () => {
         contentLabel="Contact Form"
         style={{
           content: {
-            top: '50%',
+            top:'55%',
             left: '50%',
             right: 'auto',
             bottom: 'auto',

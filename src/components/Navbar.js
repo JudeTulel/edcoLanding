@@ -66,7 +66,7 @@ const Navbar = () => {
                         </div>
                     </li>
                     <li>
-                        <Link to='/testimony' style={{ textDecoration: 'none', color: 'black' }}>Success Stories</Link>
+                        <Link to='/testimony' style={{ textDecoration: 'none', color: 'black' }} onClick={handleMenuClick}>Success Stories</Link>
                     </li>
                     <li>
                     <ContactButton/>

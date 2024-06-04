@@ -96,6 +96,36 @@ const testimonials = [
       
     }
   ];
+  const theTeam = [
+    {
+        name:'Davies Ongeche',
+        designation:'CEO',
+        img:"https://www.w3schools.com/w3images/avatar3.png"
+    },
+    {
+        name:'Jude Tulel',
+        designation:'Fullstack Mobile App Developer',
+        img:"https://www.w3schools.com/w3images/avatar3.png"
+    },
+    {
+        name:'Elly Sitoya',
+        designation:'Full-Stack Web Developer',
+        img:"https://www.w3schools.com/w3images/avatar3.png"
+    },
+    {
+        name:'Andrew',
+        designation:'Frontend Developer and UI UX designer',
+        img:"https://www.w3schools.com/w3images/avatar3.png"
+    },
+    {
+        name:'Michael Situma',
+        designation:'Backend Enginner and Database Designer',
+        img:"https://www.w3schools.com/w3images/avatar3.png"
+    },
+    
+
+  ]
 
   export {Services}
   export {testimonials}
+  export {theTeam}

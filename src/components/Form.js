@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,8 +8,9 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwziXlPKXWuGkwAZi8NlF
 
 const Form = ({ closeModal }) => {
     
-
-
+const [service, setService] = useState('')
+function getService(e){
+    setService(e.target.value)}
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,6 +31,15 @@ const Form = ({ closeModal }) => {
       <ToastContainer transition={Slide} />
     
   };
+  function sendMsg(){
+   
+       
+    const message = "Hi there I would like to enqure about your "+ service
+    let whatsappLink = "https://wa.me/254736260626?text=" + message;
+    window.open(whatsappLink,'_blank','noopenner','noreferrer')
+   
+  }
+ 
    
   return (
     <>
@@ -44,17 +54,17 @@ const Form = ({ closeModal }) => {
         </div>
         <div className="form-group">
             <label className="form-label">Which Service do you require:</label>
-            <input type="text" name="serviceReqiured" className="form-input"   required />
+            <input type="text" name="serviceReqiured" className="form-input"  value={service} onChange={getService} required />
         </div>
         <div className="form-group">
 <label className="form-label">Phone Number:</label>
-            <input type="text" name="phoneNumber" className="form-input"   required />
+            <input type="text" name="phoneNumber" className="form-input"     required />
         </div> 
         <div className="form-group">
           <label className="form-label">Email:</label>
           <input type="email" name="email" className="form-input"   required />
         </div>
-    <button type="submit" className="form-button">Submit</button>
+    <button type="submit" className="form-button" onClick={sendMsg}>Submit</button>
       </form>
      
     </>
