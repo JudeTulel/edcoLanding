@@ -1,5 +1,5 @@
 FROM node:20-alpine
-WORKDIR /src
+WORKDIR /app
 COPY package*.json .
 RUN npm i
 COPY . .
@@ -8,9 +8,10 @@ COPY . .
 # Build the React app
 RUN npm run build
 
-# Stage 2: Serve the production build with Nginx
-FROM nginx
-
+#Serve the production build with Nginx
+FROM nginx:1.26.1-alpine-perl
+# Remove default nginx
+RUN rm -rf /usr/share/nginx/html/*
 # Copy the built app from the previous stage
 COPY --from=build /app/build /usr/share/nginx/html
 
