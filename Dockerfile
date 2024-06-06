@@ -9,7 +9,7 @@ COPY . .
 RUN npm run build
 
 # Stage 2: Serve the production build with Nginx
-FROM nginx:alpine
+FROM nginx
 
 # Copy the built app from the previous stage
 COPY --from=build /app/build /usr/share/nginx/html
